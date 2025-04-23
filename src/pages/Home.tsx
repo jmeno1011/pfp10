@@ -1,20 +1,13 @@
-import NormalCard from "../components/NormalCard";
+import PatientsStateSection from "@/components/home/PatientsStateSection";
+import CriticalPatientsSection from "../components/home/CriticalPatientsSection";
+import PageTitle from "@/components/PageTitle";
 
 export default function Home() {
   return (
-    <div className="w-full max-w-[1280px] mx-auto flex flex-col">
-      <div>home</div>
-      <div className="h-full flex gap-4">
-        <NormalCard>
-          <h3>관리 환자 수</h3>
-        </NormalCard>
-        <NormalCard>
-          <h3>호전 환자 수</h3>
-        </NormalCard>
-        <NormalCard>
-          <h3>시간대별 문진 수</h3>
-        </NormalCard>
-      </div>
+    <div className="h-full w-full  max-w-[1280px] mx-auto flex flex-col gap-8">
+      <PageTitle title="Overview" />
+      <PatientsStateSection />
+      <CriticalPatientsSection />
     </div>
   );
 }
