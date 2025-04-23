@@ -131,7 +131,7 @@ const BDIExpandableTable: React.FC<BDITableProps> = ({
   return (
     <div className="w-full">
       <div className="rounded-md border">
-        <Table>
+        <Table className="bg-white">
           <TableHeader className="bg-gray-800 text-white">
             <TableRow>
               <TableCell className="w-10 p-2"></TableCell>
